@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "author": "Charlie Saunders <charlieasaunders@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/C-Saunders/google-analytics-v4-report-flattener-js"
+  },
   "dependencies": {
     "neon-cli": "^0.2.0"
   },
