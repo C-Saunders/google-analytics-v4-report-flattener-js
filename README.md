@@ -2,7 +2,7 @@
 
 Converts Google Analytics API v4 reports to flat/delimited data.
 
-This is a wrapper around [this Rust package](https://crates.io/crates/ga-v4-flattener).
+This is a wrapper around [this Rust package](https://crates.io/crates/ga-v4-flattener). Credit to [Neon](https://github.com/neon-bindings/neon) for doing the hard work for the Rust-Node bindings.
 
 ### `toDelimited(data: string, delimiter: string): Array<string>`
 ```ts
