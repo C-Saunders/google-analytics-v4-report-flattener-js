@@ -4,22 +4,22 @@ Converts Google Analytics API v4 reports to flat/delimited data.
 
 This is a wrapper around [this Rust package](https://crates.io/crates/ga-v4-flattener). Credit to [Neon](https://github.com/neon-bindings/neon) for doing the hard work for the Rust-Node bindings.
 
-### `toDelimited(data: string, delimiter: string): Array<string>`
+### `toDelimited(data: string|object, delimiter: string): Array<string>`
 ```ts
 const { toDelimited } = require('google-analytics-v4-report-flattener')
 const data = require('./test.json')
 
-toDelimited(JSON.stringify(data), ",")
+toDelimited(data, ",")
 [ '"ga:deviceCategory","ga:sessions","ga:bounces"\n"desktop",25,17\n"mobile",2,2\n',
   '"ga:country","ga:sessions","ga:bounces"\n"Azerbaijan",1,0\n"France",18,11\n"Japan",4,4\n"Switzerland",1,1\n"United States",3,3\n' ]
 ```
 
-### `toFlatJsonString(data: string)`
+### `toFlatJsonString(data: string|object)`
 ```ts
 const { toDelimited } = require('google-analytics-v4-report-flattener')
 const data = require('./test.json')
 
-JSON.parse(toFlatJsonString(JSON.stringify(data)))
+toFlatJsonString(data)
 [
   [{
       'ga:bounces': 17,
