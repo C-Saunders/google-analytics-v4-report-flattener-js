@@ -1,6 +1,6 @@
 {
   "name": "google-analytics-v4-report-flattener",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Converts Google Analytics API v4 reports to flat/delimited data.",
   "main": "lib/index.js",
   "author": "Charlie Saunders <charlieasaunders@gmail.com>",

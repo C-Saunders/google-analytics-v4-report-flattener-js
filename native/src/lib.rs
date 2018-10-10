@@ -23,16 +23,13 @@ fn to_delimited_neon(mut cx: FunctionContext) -> JsResult<JsArray> {
 
 fn to_flat_json_neon(mut cx: FunctionContext) -> JsResult<JsString> {
     let data = cx.argument::<JsString>(0)?.value();
-
     let formatted_data = to_flat_json(&data).unwrap();
-
-    println!("{:?}", formatted_data);
     
     Ok(cx.string(formatted_data.to_string()))
 }
 
 register_module!(mut cx, {
     cx.export_function("toDelimited", to_delimited_neon)?;
-    cx.export_function("toFlatJsonString", to_flat_json_neon)?;
+    cx.export_function("toFlatJson", to_flat_json_neon)?;
     Ok(())
 });
