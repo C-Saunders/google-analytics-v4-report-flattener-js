@@ -16,12 +16,12 @@ toDelimited(data, ",")
   '"ga:country","ga:sessions","ga:bounces"\n"Azerbaijan",1,0\n"France",18,11\n"Japan",4,4\n"Switzerland",1,1\n"United States",3,3\n' ]
 ```
 
-### `toFlatJsonString(data: string|object)`
+### `toFlatJson(data: string|object)`
 ```ts
 const { toDelimited } = require('google-analytics-v4-report-flattener')
 const data = require('./test.json')
 
-toFlatJsonString(data)
+toFlatJson(data)
 [
   [{
       'ga:bounces': 17,
