@@ -1,6 +1,4 @@
 extern crate ga_v4_flattener;
-extern crate serde;
-extern crate serde_json;
 #[macro_use]
 extern crate neon;
 
