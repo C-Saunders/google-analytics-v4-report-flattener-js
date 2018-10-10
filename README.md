@@ -4,6 +4,8 @@ Converts Google Analytics API v4 reports to flat/delimited data.
 
 This is a wrapper around [this Rust package](https://crates.io/crates/ga-v4-flattener). Credit to [Neon](https://github.com/neon-bindings/neon) for doing the hard work for the Rust-Node bindings.
 
+[Rust](https://doc.rust-lang.org/cargo/getting-started/installation.html) is required to compile the library after running `npm install`.
+
 ### `toDelimited(data: string|object, delimiter: string): Array<string>`
 ```ts
 const { toDelimited } = require('google-analytics-v4-report-flattener')
