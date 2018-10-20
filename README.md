@@ -18,7 +18,7 @@ toDelimited(data, ",")
 
 ### `toFlatJson(data: string|object)`
 ```ts
-const { toDelimited } = require('google-analytics-v4-report-flattener')
+const { toFlatJson } = require('google-analytics-v4-report-flattener')
 const data = require('./test.json')
 
 toFlatJson(data)
